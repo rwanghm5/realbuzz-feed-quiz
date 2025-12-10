@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Question {
     // Fields
     String label;
-    Answer[] possibleAnswers = new Answer[4];
+    Answer[] possibleAnswers = new Answer[3];
 
     Question(String label) {
         this.label = label;
@@ -23,12 +23,12 @@ public class Question {
         }
         int ans;
         while(true){
-            ans = sc.nextInt();
             boolean checker=sc.hasNextInt();
-            if(checker==true)
+            ans = sc.nextInt();
+            if(ans<=3&&checker==true)
                 break;
             else
-                System.out.println("Please enter an integer");}
+                System.out.println("Please enter an integer between 1-3");}
         return possibleAnswers[ans - 1].cat;
     }
 

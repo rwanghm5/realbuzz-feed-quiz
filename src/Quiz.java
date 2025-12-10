@@ -15,7 +15,7 @@ public class Quiz {
                 Category NetheriteOP = new Category("Netherite OP", 
                                 "You are a patient person, preferring to take it slow and steady and take a duel of attrition; boring but reliable.");
                 Category SMP = new Category("SMP (Survival multiplayer)",
-                                "You are a strategic mastermind. You strive under un-optimal conditions when the odds are against you. You don’t have a set strategy; you adapt to what is around you.");
+                                "You are a strategic mastermind. You strive under un-optimal conditions when the odds are against you. You don’t have a set strategy, you adapt to what is around you.");
                 // Create Questions
                 Question q1 = new Question("Which one of these colors resonates with you the most?");
                 // Attach Answers to Questions
@@ -60,7 +60,7 @@ public class Quiz {
                 
                 // For each question, ask, read input, store answer.
                 gameIntro();
-                Question[] qList = { q1, q2 };
+                Question[] qList = { q1, q2, q3, q4, q5, q6, q7, q8 };
                 for (Question q : qList) {
                         Category c = q.ask(sc);
                         c.points++;
