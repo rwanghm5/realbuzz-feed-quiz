@@ -78,7 +78,7 @@ public class Quiz {
         public static void gameIntro() {
                 // requires 1 to keep going
                 System.out.println("Which Minecraft PVP kit are you?");
-                System.out.println("You get to choose numbers 1-3 for every question. Enter '1' to play!");
+                System.out.println("You get to choose numbers 1-3 for every question. Please enter the number twice. Enter '1' to play!");
                 int play = sc.nextInt();
                 if (play != 1) {
                         System.out.println("Unidentifiable input. Please enter '1' to play");
