@@ -21,15 +21,20 @@ public class Question {
             System.out.println("[" + choice + "]:" +
                     this.possibleAnswers[i].label);
         }
-        int ans;
+        
+        int ans=0;
         while(true){
             boolean checker=sc.hasNextInt();
-            ans = sc.nextInt();
-            if(ans<=3&&checker==true)
-                break;
+            if(checker==true){
+                ans = sc.nextInt();
+                sc.next();
+                if(ans<=3)
+                    break;
+                else
+                    System.out.println("Please enter an integer between 1-3");}
             else
-                System.out.println("Please enter an integer between 1-3");}
+                System.out.println("Please enter an integer between 1-3");
+        }
         return possibleAnswers[ans - 1].cat;
     }
-
 }

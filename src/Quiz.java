@@ -49,7 +49,7 @@ public class Quiz {
                 q6.possibleAnswers[2] = new Answer("You sit on the white chair in the middle of the room and meditate", NetheriteOP);
 
                 Question q7 = new Question("You get the procedure for your lab double period. It is complicated and two pages long. You would…");
-                q7.possibleAnswers[0] = new Answer("Read everything carefully", NetheriteOP);
+                q7.possibleAnswers[0] = new Answer("Skim it and just start", Vanilla);
                 q7.possibleAnswers[1] = new Answer("Identify and read the parts that matter the most", SMP);
                 q7.possibleAnswers[2] = new Answer("Read everything carefully", NetheriteOP);
 
@@ -70,7 +70,7 @@ public class Quiz {
                 Category[] cList = { Vanilla, NetheriteOP, SMP};
                 // these need to be in the same order or the points will be incorrect!
                 int index = getMostPopularCatIndex(cList);
-                System.out.println("If you were a Minecraft PVP kit, you would be:" + cList[index].label + ". ");
+                System.out.println("If you were a Minecraft PVP kit, you would be: " + cList[index].label + ". ");
                 System.out.println(cList[index].description);
 
         }
