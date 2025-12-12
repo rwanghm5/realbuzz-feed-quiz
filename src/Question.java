@@ -22,19 +22,24 @@ public class Question {
                     this.possibleAnswers[i].label);
         }
         
-        int ans=0;
-        while(true){
-            boolean checker=sc.hasNextInt();
-            sc.next();
-            if(checker==true){
-                ans = sc.nextInt();
-                if(ans<=3)
-                    break;
-                else
-                    System.out.println("Please enter an integer between 1-3 TWICE");}
-            else
-                System.out.println("Please enter an integer between 1-3 TWICE");
+       int ans = 0;
+
+while (true) {
+    if (sc.hasNextInt()) {
+        ans = sc.nextInt();      // read the number once
+
+        if (ans >= 1 && ans <= 3) {
+            break;               // valid input
+        } else {
+            System.out.println("Please enter an integer between 1-3");
         }
-        return possibleAnswers[ans - 1].cat;
+
+    } else {
+        System.out.println("Please enter an integer between 1-3");
+        sc.next();  // discard invalid token
+    }
+}
+
+return possibleAnswers[ans - 1].cat;
     }
 }
