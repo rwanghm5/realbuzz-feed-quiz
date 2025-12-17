@@ -15,7 +15,7 @@ public class Quiz {
                 Category NetheriteOP = new Category("Netherite OP", 
                                 "You are a patient person, preferring to take it slow and steady and take a duel of attrition; boring but reliable.");
                 Category SMP = new Category("SMP (Survival multiplayer)",
-                                "You are a strategic mastermind. You strive under un-optimal conditions when the odds are against you. You don’t have a set strategy, you adapt to what is around you.");
+                                "You are a strategic mastermind. You strive under un-optimal conditions when the odds are against you. You don't have a set strategy, you adapt to what is around you.");
                 // Create Questions
                 Question q1 = new Question("Which one of these colors resonates with you the most?");
                 // Attach Answers to Questions
@@ -24,11 +24,11 @@ public class Quiz {
                 q1.possibleAnswers[2] = new Answer("Grey", NetheriteOP);
 
                 Question q2 = new Question("The movie theater is empty; you can choose to sit wherever you like. Where do you go?");
-                q2.possibleAnswers[0] = new Answer("Wherever’s open, you’re already walking", Vanilla);
+                q2.possibleAnswers[0] = new Answer("Wherever's open, you're already walking", Vanilla);
                 q2.possibleAnswers[1] = new Answer("Middle row, middle seat, perfect balance", NetheriteOP);
                 q2.possibleAnswers[2] = new Answer("A spot with a good view and a quick exit route", SMP);
 
-                Question q3 = new Question("You’re at a party with a bunch of executives, what are you doing?");
+                Question q3 = new Question("You're at a party with a bunch of executives, what are you doing?");
                 q3.possibleAnswers[0] = new Answer("You're talking with the executives, that's the most strategic use of your time, you think", SMP);
                 q3.possibleAnswers[1] = new Answer("You're playing on the basketball court; full energy", Vanilla);
                 q3.possibleAnswers[2] = new Answer("You're lying on the sofa, scrolling and taking life slow", NetheriteOP);
@@ -36,7 +36,7 @@ public class Quiz {
                 Question q4 = new Question("You were assigned a school book, how fast do you read it?");
                 q4.possibleAnswers[0] = new Answer("You read it as fast as you can, skimming it even", Vanilla);
                 q4.possibleAnswers[1] = new Answer("You closely read every word, annotating with care", NetheriteOP);
-                q4.possibleAnswers[2] = new Answer("Your reading speed varies, you go fast when a section isn’t important and lock in when it is", SMP);
+                q4.possibleAnswers[2] = new Answer("Your reading speed varies, you go fast when a section isn't important and lock in when it is", SMP);
 
                 Question q5 = new Question("In a group conversation, you're usually the one to...");
                 q5.possibleAnswers[0] = new Answer("Jump in often", Vanilla);
@@ -53,7 +53,7 @@ public class Quiz {
                 q7.possibleAnswers[1] = new Answer("Identify and read the parts that matter the most", SMP);
                 q7.possibleAnswers[2] = new Answer("Read everything carefully", NetheriteOP);
 
-                Question q8 = new Question("You’re about to try learning a new hobby. How do you start?");
+                Question q8 = new Question("You're about to try learning a new hobby. How do you start?");
                 q8.possibleAnswers[0] = new Answer("Dive right in and see what happens", Vanilla);
                 q8.possibleAnswers[1] = new Answer("Practice the basics until you master them", NetheriteOP);
                 q8.possibleAnswers[2] = new Answer("Mix different techniques and see what fits", SMP);
@@ -77,7 +77,7 @@ public class Quiz {
 
         public static void gameIntro() {
                 // requires 1 to keep going
-                System.out.println("Which Minecraft PVP kit are you?");
+                System.out.println("Which Minecraft PVP kit are you? (these are PVP kits, not standard survival Minecraft!");
                 System.out.println("You get to choose numbers 1-3 for every question. Please enter the number twice. Enter '1' to play!");
                 int play = sc.nextInt();
                 if (play != 1) {
