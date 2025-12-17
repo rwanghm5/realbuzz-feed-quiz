@@ -26,15 +26,14 @@ public class Question {
 
 while (true) {
     if (sc.hasNextInt()) {
-        ans = sc.nextInt();      // read the number once
-
+        ans = sc.nextInt();     
         if (ans >= 1 && ans <= 3) {
-            break;               // valid input
-        } else {
+            break; } 
+            else {
             System.out.println("Please enter an integer between 1-3");
         }
-
-    } else {
+    } 
+    else {
         System.out.println("Please enter an integer between 1-3");
         sc.next();  // discard invalid token
     }
